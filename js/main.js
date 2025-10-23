@@ -18,3 +18,30 @@ function responsive_control() {
     x.className = "topnav";
   }
 }
+
+// Get the video
+let video = document.getElementById("myVideo");
+
+// Get the button
+let btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
+// Toggle text function for Design & Aesthetics page
+function toggleText() {
+  let x = document.getElementById("designText");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

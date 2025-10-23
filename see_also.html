@@ -13,6 +13,11 @@
 
 <body>
 
+    <!-- Fullscreen background video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="img/my.mp4" type="video/mp4">
+    </video>
+
     <!-- Navigation bar -->
     <div class="topnav" id="myTopnav">
         <!-- Links to different sections -->
@@ -36,11 +41,46 @@
     <!-- Page content -->
     <div class="content">
         <!-- See Also section content -->
-        <ul>
-            <li><a href="https://www.bmw-m.com/en/index.html" target="_blank">BMW M Division Overview</a></li>
-            <li><a href="https://www.bmwusa.com/vehicles/m-models.html" target="_blank">BMW USA – BMW M Models</a></li>
-            <li><a href="https://www.topgear.com/car-reviews/bmw/m6" target="_blank">Top Gear BMW M6 Feature</a></li>
-        </ul>
+        <div class="flip-container">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h3>BMW M Division Overview</h3>
+              </div>
+              <div class="flip-box-back">
+                <a href="https://www.bmw-m.com/en/index.html" target="_blank">
+                  BMW M Division Overview
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h3>BMW USA – BMW M Models</h3>
+              </div>
+              <div class="flip-box-back">
+                <a href="https://www.bmwusa.com/vehicles/m-models.html" target="_blank">
+                  BMW USA – BMW M Models
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+                <h3>Top Gear BMW M6 Feature</h3>
+              </div>
+              <div class="flip-box-back">
+                <a href="https://www.topgear.com/car-reviews/bmw/m6" target="_blank">
+                  Top Gear BMW M6 Feature
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 
     <!-- Including the main.js file for JavaScript functionality -->

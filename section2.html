@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    
+    <!-- Fullscreen background video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="img/my.mp4" type="video/mp4">
+    </video>
 
     <!-- Navigation bar -->
     <div class="topnav" id="myTopnav">
@@ -35,10 +40,12 @@
 
     <!-- Page content -->
     <div class="content">
-        <!-- Section 2 content -->
-        The BMW M6 stands out not only for its performance but also for its 
-        <i>design philosophy</i>. 
-        Combining elegant lines with an aggressive stance, the M6 reflects BMW focusing on both aesthetics and aerodynamics. Its lightweight materials, wide body, and iconic kidney grille create a car that turns heads while maximizing efficiency.
+        <button onclick="toggleText()">Click</button>
+        <div id="designText" style="display:none; font-size: 22px;">
+            The BMW M6 stands out not only for its performance but also for its 
+            <i>design philosophy</i>. 
+            Combining elegant lines with an aggressive stance, the M6 reflects BMW focusing on both aesthetics and aerodynamics. Its lightweight materials, wide body, and iconic kidney grille create a car that turns heads while maximizing efficiency.
+        </div>
     </div>
 
     <!-- Including the main.js file for JavaScript functionality -->
